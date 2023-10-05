@@ -10,19 +10,21 @@ export class NavBarComponent extends Component {
         console.log(NavBarComponent.name, ': Rendering...');
 
         return (
-            <nav className='navbar bg-body-tertiary'>
+            <nav className='navbar navbar-expand bg-body-tertiary'>
                 <div className='container'>
                     <span className='navbar-brand mb-0 h1'>
                         React.Play
                     </span>
 
-                    <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
-                        <li className='nav-item'>
-                            <Link to="/" className='nav-link active'>
-                                Home
-                            </Link>
-                        </li>
-                    </ul>
+                    <div className='navbar-nav me-auto'>
+                        <Link to="/" className='nav-link'>
+                            Home
+                        </Link>
+                        
+                        <Link to="/render" className='nav-link'>
+                            Render
+                        </Link>
+                    </div>
                 </div>
             </nav>
         );

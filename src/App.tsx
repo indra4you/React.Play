@@ -13,6 +13,7 @@ import {
 } from './components';
 import {
     HomePage,
+    RenderPage,
 } from './pages';
 
 
@@ -28,6 +29,7 @@ export class App extends Component<PropsWithChildren> {
                 <div className='container'>
                     <Routes>
                         <Route path="/" Component={ HomePage } />
+                        <Route path="/render" Component={ RenderPage } />
                     </Routes>
                 </div>
             </>

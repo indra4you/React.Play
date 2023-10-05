@@ -1,7 +1,7 @@
 import {
     Component,
     ReactNode
-} from 'react'
+} from 'react';
 
 export class HomePage extends Component {
     public render(
