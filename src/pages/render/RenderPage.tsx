@@ -5,6 +5,7 @@ import {
 
 import {
     MessageComponent,
+    MessageWithButtonComponent,
 } from './components';
 
 export type RenderPageProps = {
@@ -47,10 +48,16 @@ export class RenderPage extends Component<RenderPageProps, RenderPageState> {
             <>
                 <h1 className='mt-3'>Render</h1>
 
+                <h4 className='mt-3'>Render - Button Click on Page</h4>
+
                 <MessageComponent message='Fixed Message'></MessageComponent>
                 <MessageComponent message={ this.state.message ?? 'Yet to Set' }></MessageComponent>
 
                 <button onClick={ this.onUpdateMessageClicked } className='btn btn-primary'>Update Message</button>
+
+                <h4 className='mt-3'>Render - Button Click on Children</h4>
+
+                <MessageWithButtonComponent></MessageWithButtonComponent>
             </>
         )
     }
