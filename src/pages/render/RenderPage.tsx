@@ -48,6 +48,8 @@ export class RenderPage extends Component<RenderPageProps, RenderPageState> {
             <>
                 <h1 className='mt-3'>Render</h1>
 
+                <p>Open browser console to see Render details</p>
+
                 <h4 className='mt-3'>Render - Button Click on Page</h4>
 
                 <MessageComponent message='Fixed Message'></MessageComponent>
