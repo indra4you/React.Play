@@ -35,6 +35,8 @@ bld/
 # Visual Studio Code cache/options directory
 .vscode/
 build/
+dist/
+_site/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
