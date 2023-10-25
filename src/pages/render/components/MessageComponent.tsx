@@ -14,7 +14,7 @@ export class MessageComponent extends Component<MessageComponentProps> {
 
         return (
             <p>
-                <span className='ps-5'>Message from Parent:</span>
+                <span className='ps-5'>Message updated by Parent:</span>
                 <span className='ps-2 font-monospace fw-semibold'>{ this.props.message }</span>
             </p>
         );
