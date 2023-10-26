@@ -7,6 +7,7 @@ import {
     MessageComponent,
     MessageWithButtonComponent,
     ChildMessageComponent,
+    ChildH4Component,
 } from './components';
 
 export type RenderPageProps = {
@@ -74,7 +75,7 @@ export class RenderPage extends Component<RenderPageProps, RenderPageState> {
                 <hr />
 
                 <ChildMessageComponent>
-                    <h4 className='py-3'>Children of Child Component</h4>
+                    <ChildH4Component />
                 </ChildMessageComponent>
             </>
         )
