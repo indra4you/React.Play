@@ -10,17 +10,17 @@ import {
     ChildH4Component,
 } from './components';
 
-export type RenderPageProps = {
+export type RenderCompPageProps = {
 }
 
-export type RenderPageState = {
+export type RenderCompPageState = {
     message: string;
     counter: number;
 }
 
-export class RenderPage extends Component<RenderPageProps, RenderPageState> {
+export class RenderCompPage extends Component<RenderCompPageProps, RenderCompPageState> {
     constructor(
-        props: RenderPageProps,
+        props: RenderCompPageProps,
     ) {
         super(props);
 
@@ -38,17 +38,17 @@ export class RenderPage extends Component<RenderPageProps, RenderPageState> {
             counter: this.state.counter + 1,
             message: `Updated Message - ( ${ this.state.counter + 1 } times )`,
         }, () => {
-            console.log(RenderPage.name, ': State Changed...');
+            console.log(RenderCompPage.name, ': State Changed...');
         });
     }
 
     public render(
     ): ReactNode {
-        console.log(RenderPage.name, ': Rendering...');
+        console.log(RenderCompPage.name, ': Rendering...');
 
         return (
             <>
-                <h1 className='mt-3'>Render</h1>
+                <h1 className='mt-3'>Render with Typescript Component</h1>
 
                 <div className='alert alert-info' role='alert'>
                     Open browser <span className='fw-bold'>Console</span> to see Render details

@@ -21,8 +21,12 @@ export class NavBarComponent extends Component {
                             Home
                         </Link>
                         
-                        <Link to="/render" className='nav-link'>
-                            Render
+                        <Link to="/render/component" className='nav-link'>
+                            Render with Component
+                        </Link>
+                        
+                        <Link to="/render/function" className='nav-link'>
+                            Render with Function
                         </Link>
                     </div>
                 </div>

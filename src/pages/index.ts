@@ -1,2 +1,3 @@
 export * from './home';
-export * from './render';
+export * from './render.component';
+export * from './render.function';

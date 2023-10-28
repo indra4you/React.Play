@@ -13,9 +13,9 @@ import {
 } from './components';
 import {
     HomePage,
-    RenderPage,
+    RenderCompPage,
+    RenderFuncPage,
 } from './pages';
-
 
 export class App extends Component<PropsWithChildren> {
     public render(
@@ -28,8 +28,14 @@ export class App extends Component<PropsWithChildren> {
                 
                 <div className='container'>
                     <Routes>
-                        <Route path="/" Component={ HomePage } />
-                        <Route path="/render" Component={ RenderPage } />
+                        <Route index Component={ HomePage } />
+                        <Route path="/home" Component={ HomePage } />
+
+                        <Route path="/render">
+                            <Route index Component={ RenderCompPage } />
+                            <Route path="/render/component" Component={ RenderCompPage } />
+                            <Route path="/render/function" Component={ RenderFuncPage } />
+                        </Route>
                     </Routes>
                 </div>
             </>
